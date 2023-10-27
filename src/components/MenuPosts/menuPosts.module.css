@@ -39,6 +39,14 @@
   width: max-content;
 }
 
+.category.fashion {
+  background-color: #ffc0cb;
+}
+
+.category.science {
+  background-color: #87ceeb;
+}
+
 .category.travel {
   background-color: #789cff;
 }

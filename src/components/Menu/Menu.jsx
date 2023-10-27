@@ -10,12 +10,7 @@ const Menu = () => {
       {/* Most popular */}
       <h2 className={styles.subTitle}>{"What's hot"}</h2>
       <h1 className={styles.title}>Most Popular</h1>
-      <MenuPosts withImage={false} />
-
-      {/* Editor's pick */}
-      <h2 className={styles.subTitle}>Chosen by the editor</h2>
-      <h1 className={styles.title}>{"Editor's Pick"}</h1>
-      <MenuPosts withImage={true} />
+      <MenuPosts />
     </div>
   );
 };

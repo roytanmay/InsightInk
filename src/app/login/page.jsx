@@ -25,8 +25,6 @@ const LoginPage = () => {
         <div className={styles.social} onClick={() => signIn("google")}>
           Sign in with Google
         </div>
-        <div className={styles.social}>Sign in with Github</div>
-        <div className={styles.social}>Sign in with LinkedIn</div>
       </div>
     </div>
   );
