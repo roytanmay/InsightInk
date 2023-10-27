@@ -41,7 +41,7 @@ const Featured = async () => {
           <h1 className={styles.postTitle}>{post.title}</h1>
           <p className={styles.postDesc}>{post.desc.substring(0, 200)}...</p>
           <button className={styles.button}>
-            <Link href={`posts/${post.slug}`}>Read More</Link>
+            <Link href={`/posts/${post.slug}`}>Read More</Link>
           </button>
         </div>
       </div>
