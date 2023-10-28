@@ -23,6 +23,7 @@ const MenuPosts = async ({ withImage }) => {
   return (
     <div className={styles.items}>
       {data &&
+        data.lenght > 0 &&
         data.map((item) => (
           <Link
             href={`/posts/${item.slug}`}
