@@ -5,7 +5,7 @@ import { notification } from "antd";
 import styles from "./postPage.module.css";
 import Image from "next/image";
 // import ReactQuill from "react-quill";
-import "react-quill/dist/quill.bubble.css";
+// import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import {
@@ -17,7 +17,7 @@ import {
 import { app } from "@/utils/firebase";
 import dynamic from "next/dynamic";
 
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+// const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const PostPage = () => {
   const { status } = useSession();
@@ -147,6 +147,7 @@ const PostPage = () => {
         onChange={(e) => setCatSlug(e.target.value)}
         value={catSlug}
       >
+        <option value="">select one</option>
         <option value="culture">culture</option>
         <option value="coding">coding</option>
         <option value="fashion">fashion</option>
@@ -170,10 +171,9 @@ const PostPage = () => {
           </button>
         </div>
 
-        <ReactQuill
-          theme="bubble"
+        <textarea
           value={value}
-          onChange={setValue}
+          onChange={(e) => setValue(e.target.value)}
           placeholder="Pen your insights..."
           className={styles.textArea}
         />

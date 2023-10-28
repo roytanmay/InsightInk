@@ -67,6 +67,13 @@
 
 .textArea {
   width: 100%;
+  background: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  color: #b3b3b1;
+  font-size: 20px;
 }
 
 .publish {
