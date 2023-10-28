@@ -18,12 +18,11 @@ const getData = async () => {
 const MenuPosts = async ({ withImage }) => {
   const data = await getData();
 
-  // console.log(data);
+  // console.log(data.lenght);
 
   return (
     <div className={styles.items}>
       {data &&
-        data.lenght > 0 &&
         data.map((item) => (
           <Link
             href={`/posts/${item.slug}`}
