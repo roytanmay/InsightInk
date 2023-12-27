@@ -10,12 +10,12 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@auth/prisma-adapter": "^1.0.5",
-    "@prisma/client": "^5.5.2",
-    "antd": "^5.10.2",
-    "firebase": "^10.5.0",
-    "next": "13.5.5",
-    "next-auth": "^4.24.3",
+    "@auth/prisma-adapter": "^1.0.12",
+    "@prisma/client": "^5.7.1",
+    "antd": "^5.12.5",
+    "firebase": "^10.7.1",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
     "react": "^18",
     "react-dom": "^18",
     "react-quill": "^2.0.0",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "encoding": "^0.1.13",
     "eslint": "^8",
-    "eslint-config-next": "13.5.5",
-    "prisma": "^5.5.2"
+    "eslint-config-next": "14.0.4",
+    "prisma": "^5.7.1"
   }
 }
