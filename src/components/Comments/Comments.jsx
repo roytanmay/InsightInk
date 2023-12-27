@@ -20,7 +20,7 @@ const fetcher = async (url) => {
 const Comments = ({ postSlug }) => {
   const { status } = useSession();
   const { data, mutate, isLoading } = useSWR(
-    `https://insight-ink-one.vercel.app/api/comments?postSlug=${postSlug}`,
+    `https://insight-pzs8ge4qo-tanmay-roys-projects.vercel.app/api/comments?postSlug=${postSlug}`,
     fetcher
   );
 

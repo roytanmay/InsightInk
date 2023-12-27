@@ -5,7 +5,7 @@ import Image from "next/image";
 import Comments from "@/components/Comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`https://insight-ink-one.vercel.app/api/posts/${slug}`, {
+  const res = await fetch(`https://insight-pzs8ge4qo-tanmay-roys-projects.vercel.app/api/posts/${slug}`, {
     cache: "no-store",
   });
 

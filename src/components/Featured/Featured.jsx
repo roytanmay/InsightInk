@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const getData = async () => {
-  const res = await fetch(`https://insight-ink-one.vercel.app/api/posts/random`, {
+  const res = await fetch(`https://insight-pzs8ge4qo-tanmay-roys-projects.vercel.app/api/posts/random`, {
     cache: "no-store",
   });
 
