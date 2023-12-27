@@ -5,7 +5,7 @@ import Image from "next/image";
 import Comments from "@/components/Comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts/${slug}`, {
+  const res = await fetch(`https://insight-ink-one.vercel.app/api/posts/${slug}`, {
     cache: "no-store",
   });
 
@@ -20,7 +20,6 @@ const SinglePage = async ({ params }) => {
   const { slug } = params;
   const data = await getData(slug);
 
-  // console.log(data);
 
   return (
     <div className={styles.container}>
