@@ -6,7 +6,7 @@ import Card from "../Card/Card";
 
 const getData = async (page, cat) => {
   const res = await fetch(
-    `https://insight-pzs8ge4qo-tanmay-roys-projects.vercel.app/api/posts?page=${page}&cat=${cat || ""}`,
+    `${process.env.NEXTAUTH_URL}/api/posts?page=${page}&cat=${cat || ""}`,
     {
       cache: "no-store",
     }

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getData = async () => {
-  const res = await fetch(`https://insight-pzs8ge4qo-tanmay-roys-projects.vercel.app/api/categories`, {
+  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/categories`, {
     cache: "no-store",
   });
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Comments from "@/components/Comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`https://insight-pzs8ge4qo-tanmay-roys-projects.vercel.app/api/posts/${slug}`, {
+  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts/${slug}`, {
     cache: "no-store",
   });
 
@@ -19,7 +19,6 @@ const getData = async (slug) => {
 const SinglePage = async ({ params }) => {
   const { slug } = params;
   const data = await getData(slug);
-
 
   return (
     <div className={styles.container}>
